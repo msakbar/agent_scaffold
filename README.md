@@ -1,4 +1,4 @@
-# LitRealms AI Chat
+# AI Chat
 
 A simple chat application built with Next.js 15 and Google Agent Development Kit (ADK).
 
@@ -20,7 +20,7 @@ A simple chat application built with Next.js 15 and Google Agent Development Kit
 
 ### 1. Clone and Navigate
 ```bash
-cd litRealmsMVP
+cd agent_scaffold
 ```
 
 ### 2. Backend Setup (Python + Google ADK)
@@ -82,7 +82,7 @@ ADK Web Interface will run on: http://localhost:8002
 ## Project Structure
 
 ```
-litRealmsMVP/
+agent_scaffold/
 ├── frontend/          # Next.js 15 application
 │   ├── src/
 │   │   ├── app/
