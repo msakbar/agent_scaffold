@@ -1,4 +1,4 @@
-# AI Chat
+# Agent Scaffold
 
 A simple chat application built with Next.js 15 and Google Agent Development Kit (ADK).
 
@@ -20,6 +20,7 @@ A simple chat application built with Next.js 15 and Google Agent Development Kit
 
 ### 1. Clone and Navigate
 ```bash
+git clone https://github.com/msakbar/agent_scaffold.git
 cd agent_scaffold
 ```
 
@@ -36,6 +37,7 @@ pip install -r requirements.txt
 
 # Configure environment variables
 # Edit .env and add your Google API key:
+# The .env file already exists with a placeholder key - replace it with your actual key
 # GOOGLE_API_KEY=your_actual_api_key_here
 ```
 
@@ -90,12 +92,16 @@ agent_scaffold/
 │   │   │   └── api/chat/route.ts  # API proxy to backend
 │   │   └── components/
 │   │       └── Chat.tsx           # Chat interface component
-│   └── package.json
+│   ├── package.json
+│   └── next.config.ts
 ├── backend/           # Python + Google ADK
-│   ├── main.py       # FastAPI server
-│   ├── agent.py      # ADK agent configuration
+│   ├── main.py        # FastAPI server
+│   ├── agent.py       # ADK agent configuration
+│   ├── assistant/     # Assistant agent configuration
+│   │   └── agent.py   # Agent implementation
 │   ├── requirements.txt
-│   └── .env          # Environment variables
+│   ├── .env           # Environment variables
+│   └── adk_sessions.db # SQLite database
 └── README.md
 ```
 
